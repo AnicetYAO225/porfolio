@@ -1,971 +1,1761 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anicet YAO - Cartographe-Géomaticien-Développeur SIG fullstack"
+    />
+    <title>
+      Anicet YAO - Portfolio (Cartographe-Géomaticien-Développeur SIG fullstack)
+    </title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Anicet YAO - Cartographe-Géomaticien-Développeur SIG fullstack">
-  <title>Anicet YAO - Portfolio (Cartographe-Géomaticien-Développeur SIG fullstack)</title>
+    <link rel="canonical" href="https://anicetyao225.github.io/porfolio/" />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://anicetyao225.github.io/porfolio/"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://anicetyao225.github.io/porfolio/en/"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://anicetyao225.github.io/porfolio/"
+    />
 
-  <link rel="canonical" href="https://anicetyao225.github.io/porfolio/">
-  <link rel="alternate" hreflang="fr" href="https://anicetyao225.github.io/porfolio/">
-  <link rel="alternate" hreflang="en" href="https://anicetyao225.github.io/porfolio/en/">
-  <link rel="alternate" hreflang="x-default" href="https://anicetyao225.github.io/porfolio/">
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Anicet YAO - Cartographe, Géomaticien et Développeur SIG"
+    />
+    <meta
+      property="og:description"
+      content="SIG, cartographie, télédétection, développement WebSIG et data science. Portfolio de projets géospatiaux."
+    />
+    <meta
+      property="og:image"
+      content="https://anicetyao225.github.io/porfolio/assets/images/og-cover.png"
+    />
+    <meta
+      property="og:url"
+      content="https://anicetyao225.github.io/porfolio/"
+    />
+    <meta property="og:locale" content="fr_FR" />
 
-  <!-- Open Graph / réseaux sociaux -->
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Anicet YAO - Cartographe, Géomaticien et Développeur SIG">
-<meta property="og:description" content="SIG, cartographie, télédétection, développement WebSIG et data science. Portfolio de projets géospatiaux.">
-<meta property="og:image" content="https://anicetyao225.github.io/porfolio/assets/images/og-cover.png">
-<meta property="og:url" content="https://anicetyao225.github.io/porfolio/">
-<meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Anicet YAO - Cartographe-Géomaticien-Développeur SIG fullstack"
+    />
+    <meta
+      name="twitter:description"
+      content="SIG, cartographie, télédétection, développement WebSIG et data science."
+    />
+    <meta
+      name="twitter:image"
+      content="https://anicetyao225.github.io/porfolio/assets/images/og-cover.png"
+    />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Anicet YAO - Cartographe-Géomaticien-Développeur SIG fullstack">
-  <meta name="twitter:description" content="SIG, cartographie, télédétection, développement WebSIG et data science.">
-  <meta name="twitter:image" content="https://anicetyao225.github.io/porfolio/assets/images/og-cover.png">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <a href="#profil" class="skip-link">Aller au contenu</a>
 
-<body>
+    <div class="grid-overlay" aria-hidden="true"></div>
 
-  <a href="#profil" class="skip-link">Aller au contenu</a>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <span class="brand-name">ANICET YAO</span>
+          <span class="brand-role"
+            >Cartographe-Géomaticien-Développeur SIG fullstack</span
+          >
+        </div>
 
-  <div class="grid-overlay" aria-hidden="true"></div>
+        <nav>
+          <ul class="nav-list" data-nav-list>
+            <li>
+              <a href="#profil" class="nav-link active" data-nav-link
+                ><span class="ref">01</span>Profil</a
+              >
+            </li>
+            <li>
+              <a href="#competences" class="nav-link" data-nav-link
+                ><span class="ref">02</span>Compétences</a
+              >
+            </li>
+            <li>
+              <a href="#parcours" class="nav-link" data-nav-link
+                ><span class="ref">03</span>Parcours</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-link" data-nav-link
+                ><span class="ref">04</span>Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link" data-nav-link
+                ><span class="ref">05</span>Contact</a
+              >
+            </li>
+            <li class="nav-cta">
+              <a href="#contact" class="btn btn-solid">M'contacter</a>
+            </li>
+            <li class="lang-switch">
+              <a href="./en/index.html" hreflang="en">EN</a>
+            </li>
+          </ul>
+        </nav>
 
-  <!-- ===== HEADER ===== -->
-  <header class="site-header">
-    <div class="container">
-
-      <div class="brand">
-        <span class="brand-name">ANICET YAO</span>
-        <span class="brand-role">Cartographe-Géomaticien-Développeur SIG fullstack</span>
+        <button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
       </div>
+    </header>
 
-      <nav>
-        <ul class="nav-list" data-nav-list>
-          <li><a href="#profil" class="nav-link active" data-nav-link><span class="ref">01</span>Profil</a></li>
-          <li><a href="#competences" class="nav-link" data-nav-link><span class="ref">02</span>Compétences</a></li>
-          <li><a href="#parcours" class="nav-link" data-nav-link><span class="ref">03</span>Parcours</a></li>
-          <li><a href="#portfolio" class="nav-link" data-nav-link><span class="ref">04</span>Portfolio</a></li>
-          <li><a href="#contact" class="nav-link" data-nav-link><span class="ref">05</span>Contact</a></li>
-          <li class="nav-cta"><a href="#contact" class="btn btn-solid">M'contacter</a></li>
-          <li class="lang-switch"><a href="./en/index.html" hreflang="en">EN</a></li>
-        </ul>
-      </nav>
+    <main>
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="profil">
+        <div class="container">
+          <div class="hero-copy">
+            <p class="hero-coords">
+              <ion-icon name="locate-outline"></ion-icon> 45.43° N · 4.39° E -
+              Bordeaux, France
+            </p>
 
-      <button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">
-        <ion-icon name="menu-outline"></ion-icon>
+            <h1 class="hero-title">Anicet <span class="accent">YAO</span></h1>
+            <p class="hero-role">
+              Cartographe · Géomaticien · Développeur SIG Full Stack
+            </p>
+
+            <p class="hero-text">
+              Je conçois des outils SIG et WebSIG et transforme des données
+              géospatiales complexes en cartes, analyses et indicateurs
+              actionnables. Bases de données géographiques, télédétection,
+              automatisation (Python, SQL, FME) et développement SIG, au service
+              de la décision territoriale.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn btn-solid"
+                ><ion-icon name="grid-outline"></ion-icon> Voir mes projets</a
+              >
+              <a
+                href="./assets/cv/Anicet_YAO_CV.pdf"
+                class="btn btn-outline"
+                download
+                ><ion-icon name="download-outline"></ion-icon> Télécharger mon
+                CV</a
+              >
+              <a href="#contact" class="btn btn-outline"
+                ><ion-icon name="mail-outline"></ion-icon> Me contacter</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-portrait">
+            <div class="hero-portrait-frame">
+              <img
+                src="./assets/images/-image.png"
+                alt="Portrait d'Anicet YAO"
+              />
+            </div>
+            <p class="hero-portrait-label">Repère · AY-01</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== STATS ===== -->
+      <section class="stats-band">
+        <div class="container">
+          <div class="stats-strip reveal">
+            <div class="stat">
+              <p class="stat-num">25</p>
+              <p class="stat-label">Projets réalisés</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">6</p>
+              <p class="stat-label">Structures &amp; missions</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">9</p>
+              <p class="stat-label">Domaines d'expertise</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">30+</p>
+              <p class="stat-label">Outils maîtrisés</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">À propos</p>
+              <h2 class="section-title">Profil</h2>
+            </div>
+            <span class="section-ref">Feuille 01 / 05</span>
+          </div>
+
+          <div class="about-grid reveal">
+            <div class="about-text">
+              <p>
+                Cartographe et géomaticien, je transforme des données
+                géospatiales brutes en cartes, outils et décisions. De la
+                collecte terrain à la mise en production d'un WebSIG, je
+                maîtrise toute la chaîne : structuration de bases de données
+                géographiques (PostgreSQL/PostGIS), traitement d'images
+                satellites, développement d'applications cartographiques et
+                automatisation de traitements avec Python et FME.
+              </p>
+              <p>
+                Je conjugue rigueur technique et sens du terrain - cartographie
+                interactive, télédétection, analyse spatiale et data science se
+                retrouvent dans chacun de mes projets, avec un objectif constant
+                : livrer une donnée fiable et une carte qui parle directement
+                aux décideurs. ArcGIS, QGIS, Python, JavaScript, SQL, Google
+                Earth Engine et FME sont mes outils du quotidien.
+              </p>
+              <p>
+                Formé en France, avec des expériences menées en Côte d'Ivoire
+                comme en France (collectivités territoriales, bureaux d'études,
+                IGN, SUEZ), j'aime relever des problématiques géospatiales
+                concrètes, en autonomie comme en équipe, du cadrage d'un projet
+                jusqu'à l'accompagnement des utilisateurs finaux.
+              </p>
+            </div>
+
+            <div class="legend-card ticks">
+              <span class="tick-bl"></span><span class="tick-br"></span>
+              <p class="legend-title">
+                <ion-icon name="bookmark-outline"></ion-icon> Légende
+              </p>
+              <div class="legend-list">
+                <div class="legend-item">
+                  <span class="k">Fonction</span
+                  ><span class="v">Géomaticien- DEv SIG</span>
+                </div>
+                <div class="legend-item">
+                  <span class="k">Localisation</span
+                  ><span class="v">Bordeaux, France</span>
+                </div>
+                <div class="legend-item">
+                  <span class="k">Formation</span
+                  ><span class="v">Master Géomatique</span>
+                </div>
+                <div class="legend-item">
+                  <span class="k">Domaines</span
+                  ><span class="v">SIG · WebSIG · Data</span>
+                </div>
+                <div class="legend-item">
+                  <span class="k">Disponibilité</span
+                  ><span class="v">Sur demande</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layers-grid reveal">
+            <div class="layer-card" style="--swatch: var(--cat-interactive)">
+              <span class="layer-code">L01</span>
+              <h4 class="layer-title">Cartographie interactive &amp; WebSIG</h4>
+              <p class="layer-text">
+                Conception et déploiement d'outils WebSIG métier, de la
+                modélisation du besoin jusqu'à la mise en production, pour
+                rendre la donnée géographique accessible et actionnable.
+              </p>
+            </div>
+
+            <div class="layer-card" style="--swatch: var(--cat-carto)">
+              <span class="layer-code">L02</span>
+              <h4 class="layer-title">
+                Cartographie &amp; visualisation spatiale
+              </h4>
+              <p class="layer-text">
+                Des cartes et visualisations qui rendent lisibles des dynamiques
+                géographiques complexes, pour éclairer la décision autant que
+                pour raconter un territoire.
+              </p>
+            </div>
+
+            <div class="layer-card" style="--swatch: var(--cat-stats)">
+              <span class="layer-code">L03</span>
+              <h4 class="layer-title">
+                Développement SIG &amp; automatisation
+              </h4>
+              <p class="layer-text">
+                Scripts Python et chaînes ETL (FME) pour automatiser les
+                traitements SIG, réduire les tâches manuelles et fiabiliser les
+                workflows de production.
+              </p>
+            </div>
+
+            <div class="layer-card" style="--swatch: var(--cat-linkedin)">
+              <span class="layer-code">L04</span>
+              <h4 class="layer-title">Bases de données géographiques</h4>
+              <p class="layer-text">
+                Conception, structuration et administration de bases
+                PostgreSQL/PostGIS et SGBDR, pour une donnée fiable, cohérente
+                et exploitable.
+              </p>
+            </div>
+
+            <div class="layer-card" style="--swatch: var(--cat-interactive)">
+              <span class="layer-code">L05</span>
+              <h4 class="layer-title">Photogrammétrie, LiDAR &amp; 3D</h4>
+              <p class="layer-text">
+                Restitution photogrammétrique et exploitation de nuages de
+                points LiDAR pour la modélisation urbaine et environnementale en
+                3D.
+              </p>
+            </div>
+
+            <div class="layer-card" style="--swatch: var(--cat-carto)">
+              <span class="layer-code">L06</span>
+              <h4 class="layer-title">Analyse &amp; modélisation spatiale</h4>
+              <p class="layer-text">
+                Croisement de données spatiales multi-sources pour en extraire
+                des indicateurs territoriaux fiables et des modèles d'aide à la
+                décision.
+              </p>
+            </div>
+
+            <div class="layer-card" style="--swatch: var(--cat-stats)">
+              <span class="layer-code">L07</span>
+              <h4 class="layer-title">Pilotage de projets géomatiques</h4>
+              <p class="layer-text">
+                Cadrage, conduite et livraison de projets géomatiques, de
+                l'analyse du besoin jusqu'à l'accompagnement des utilisateurs.
+              </p>
+            </div>
+
+            <div class="layer-card" style="--swatch: var(--cat-linkedin)">
+              <span class="layer-code">L08</span>
+              <h4 class="layer-title">
+                Télédétection &amp; imagerie satellite
+              </h4>
+              <p class="layer-text">
+                Traitement et interprétation d'images Sentinel-2, Landsat et
+                autres sources satellites, au service du suivi environnemental
+                et de l'aménagement.
+              </p>
+            </div>
+
+            <div class="layer-card" style="--swatch: var(--cat-interactive)">
+              <span class="layer-code">L09</span>
+              <h4 class="layer-title">
+                Data analysis &amp; indicateurs territoriaux
+              </h4>
+              <p class="layer-text">
+                Transformation de données brutes en insights exploitables :
+                statistiques, tableaux de bord et cartographies décisionnelles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TOOLKIT ===== -->
+      <section class="section toolkit">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Environnement technique</p>
+              <h2 class="section-title">Boîte à outils</h2>
+            </div>
+            <span class="section-ref">Légende technique</span>
+          </div>
+
+          <div class="skill-groups reveal">
+            <div class="skill-group" style="--swatch: var(--cat-carto)">
+              <div class="skill-group-head">
+                <ion-icon name="map-outline"></ion-icon>
+                <h3 class="skill-group-title">SIG &amp; cartographie</h3>
+              </div>
+              <ul class="tag-list">
+                <li class="tag">ArcGIS Pro</li>
+                <li class="tag">QGIS</li>
+                <li class="tag">AutoCAD</li>
+                <li class="tag">Agisoft Metashape</li>
+                <li class="tag">Global Mapper</li>
+                <li class="tag">FME</li>
+                <li class="tag">GeoServer</li>
+                <li class="tag">PostGIS</li>
+                <li class="tag">GDAL / OGR</li>
+                <li class="tag">Mapbox GL</li>
+                <li class="tag">Leaflet</li>
+                <li class="tag">OpenLayers</li>
+              </ul>
+            </div>
+
+            <div class="skill-group" style="--swatch: var(--cat-stats)">
+              <div class="skill-group-head">
+                <ion-icon name="analytics-outline"></ion-icon>
+                <h3 class="skill-group-title">
+                  Télédétection &amp; data science
+                </h3>
+              </div>
+              <ul class="tag-list">
+                <li class="tag">Google Earth Engine</li>
+                <li class="tag">ENVI</li>
+                <li class="tag">Erdas Imagine</li>
+                <li class="tag">Rasterio</li>
+                <li class="tag">R Studio</li>
+                <li class="tag">Scikit-learn</li>
+                <li class="tag">Power BI</li>
+                <li class="tag">Pandas / NumPy</li>
+              </ul>
+            </div>
+
+            <div class="skill-group" style="--swatch: var(--cat-interactive)">
+              <div class="skill-group-head">
+                <ion-icon name="terminal-outline"></ion-icon>
+                <h3 class="skill-group-title">
+                  Développement &amp; WebSIG fullstack
+                </h3>
+              </div>
+              <ul class="tag-list">
+                <li class="tag">Python</li>
+                <li class="tag">Django</li>
+                <li class="tag">Flask</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">React</li>
+                <li class="tag">Node.js</li>
+                <li class="tag">HTML / CSS</li>
+                <li class="tag">API REST</li>
+              </ul>
+            </div>
+
+            <div class="skill-group" style="--swatch: var(--cat-linkedin)">
+              <div class="skill-group-head">
+                <ion-icon name="cloud-outline"></ion-icon>
+                <h3 class="skill-group-title">Données, DevOps &amp; outils</h3>
+              </div>
+              <ul class="tag-list">
+                <li class="tag">PostgreSQL / SQL</li>
+                <li class="tag">MySQL</li>
+                <li class="tag">Docker</li>
+                <li class="tag">Git &amp; GitHub</li>
+                <li class="tag">Microsoft Office</li>
+                <li class="tag">Adobe Illustrator</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PARCOURS ===== -->
+      <section class="section parcours" id="parcours">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Formation &amp; expérience</p>
+              <h2 class="section-title">Parcours</h2>
+            </div>
+            <span class="section-ref">Feuille 02 / 05</span>
+          </div>
+
+          <div class="parcours-grid reveal">
+            <div>
+              <div class="track-head">
+                <ion-icon name="book-outline"></ion-icon>
+                <h3>Formation</h3>
+              </div>
+              <ol class="track">
+                <li class="track-item">
+                  <span class="track-year">2023 - 2025</span>
+                  <h4 class="track-title">
+                    Master Géomatique - Université de Rouen Normandie
+                  </h4>
+                  <p class="track-text">
+                    SIG, cartographie, développement et programmation SIG,
+                    webmapping, apprentissage automatique, télédétection, data
+                    analysis, dataviz, environnement, aménagement.
+                  </p>
+                </li>
+
+                <li class="track-item">
+                  <span class="track-year">2019 - 2021</span>
+                  <h4 class="track-title">
+                    Master Géographie physique - Université Alassane Ouattara de
+                    Bouaké
+                  </h4>
+                  <p class="track-text">
+                    SGBDR, programmation et développement SIG, géovisualisation,
+                    cartographie, modélisation 3D, climatologie, hydrologie.
+                  </p>
+                </li>
+
+                <li class="track-item">
+                  <span class="track-year">2016 - 2019</span>
+                  <h4 class="track-title">
+                    Licence Géographie physique - Université Alassane Ouattara
+                    de Bouaké
+                  </h4>
+                  <p class="track-text">
+                    Analyse et traitement de données, modélisation, webmapping,
+                    développement SIG, aménagement du territoire, climatologie,
+                    hydrologie.
+                  </p>
+                </li>
+
+                <li class="track-item">
+                  <span class="track-year">2023</span>
+                  <h4 class="track-title">
+                    Certificat en Photogrammétrie et Télédétection - IGN FI
+                  </h4>
+                  <p class="track-text">
+                    Traitement d'images satellites et restitution
+                    photogrammétrique appliqués à la modélisation du territoire.
+                  </p>
+                </li>
+
+                <li class="track-item">
+                  <span class="track-year">2023</span>
+                  <h4 class="track-title">
+                    Certificat en Télédétection et Systèmes d'Information
+                    Géographique — GEOSIG Corporation
+                  </h4>
+                  <p class="track-text">
+                    Analyse d'images satellites et traitements SIG appliqués au
+                    suivi environnemental et territorial.
+                  </p>
+                </li>
+              </ol>
+            </div>
+
+            <div>
+              <div class="track-head">
+                <ion-icon name="briefcase-outline"></ion-icon>
+                <h3>Expérience</h3>
+              </div>
+              <ol class="track">
+                <li class="track-item">
+                  <span class="track-year"
+                    >2025 - 2026 · 7 mois, distanciel</span
+                  >
+                  <h4 class="track-title">
+                    Géomaticien SIG / WebSIG - SPAX, Abidjan
+                  </h4>
+                  <ul class="track-list">
+                    <li>
+                      Conçu et déployé un outil WebSIG métier pour la
+                      visualisation, le suivi et l'exploitation des données
+                      géographiques.
+                    </li>
+                    <li>
+                      Structuré et administré des bases de données géographiques
+                      PostgreSQL/PostGIS pour améliorer la qualité et
+                      l'exploitabilité des données.
+                    </li>
+                    <li>
+                      Développé des scripts Python pour automatiser les
+                      traitements SIG et optimiser les workflows de production.
+                    </li>
+                    <li>
+                      Analysé des données spatiales multi-sources pour produire
+                      des indicateurs territoriaux et des supports d'aide à la
+                      décision.
+                    </li>
+                    <li>
+                      Modélisé des données géographiques et conçu des chaînes de
+                      traitement adaptées aux besoins métier.
+                    </li>
+                    <li>
+                      Produit des cartographies thématiques et des livrables
+                      techniques pour la planification et le pilotage
+                      opérationnel.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="track-item">
+                  <span class="track-year">2025 · 7 mois</span>
+                  <h4 class="track-title">
+                    Géomaticien / Data Scientiste - SUEZ, Pessac
+                  </h4>
+                  <ul class="track-list">
+                    <li>
+                      Collecté, intégré et exploité plusieurs sources de données
+                      géographiques pour analyser les performances
+                      opérationnelles à l'échelle territoriale.
+                    </li>
+                    <li>
+                      Modélisé les facteurs spatiaux liés aux erreurs de tri des
+                      déchets à l'échelle des IRIS.
+                    </li>
+                    <li>
+                      Réalisé des analyses spatiales et statistiques pour
+                      identifier les zones aux comportements spécifiques.
+                    </li>
+                    <li>
+                      Traité plusieurs milliers d'entités géographiques issues
+                      de bases métiers et référentiels.
+                    </li>
+                    <li>
+                      Automatisé les chaînes de traitement SIG avec Python pour
+                      améliorer la reproductibilité des analyses.
+                    </li>
+                    <li>
+                      Produit des cartographies décisionnelles destinées aux
+                      équipes et à l'aide au pilotage.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="track-item">
+                  <span class="track-year">2024 · 6 mois</span>
+                  <h4 class="track-title">
+                    Chargé de missions SIG et géomatique - Le Havre Seine
+                    Métropole
+                  </h4>
+                  <ul class="track-list">
+                    <li>
+                      Structuré et mis à jour les référentiels géographiques du
+                      PLUi pour garantir la cohérence des données d'aménagement.
+                    </li>
+                    <li>
+                      Intégré et contrôlé des données SIG multi-sources
+                      provenant de différents partenaires.
+                    </li>
+                    <li>
+                      Développé un outil SIG de suivi des haies et de la
+                      biodiversité pour accompagner les politiques
+                      environnementales.
+                    </li>
+                    <li>
+                      Réalisé des analyses spatiales et des travaux de
+                      photo-interprétation à partir de données satellitaires.
+                    </li>
+                    <li>
+                      Produit des cartes thématiques destinées aux études
+                      territoriales et aux équipes métiers.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="track-item">
+                  <span class="track-year">2023 · 10 mois</span>
+                  <h4 class="track-title">
+                    Cartographe - Géomaticien (SIG et télédétection), Cabinet
+                    CGEG, Abidjan
+                  </h4>
+                  <ul class="track-list">
+                    <li>
+                      Analysé des images Sentinel-2 et Landsat pour des projets
+                      fonciers et agricoles.
+                    </li>
+                    <li>
+                      Développé un outil SIG d'aide à l'aménagement du
+                      territoire.
+                    </li>
+                    <li>
+                      Produit des cartographies thématiques et des bases de
+                      données géographiques.
+                    </li>
+                    <li>
+                      Réalisé des traitements automatisés pour l'exploitation de
+                      données spatiales.
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="track-item">
+                  <span class="track-year">2021 - 2023 · 18 mois</span>
+                  <h4 class="track-title">
+                    Géomaticien et Administrateur SIG - IGNFI, Abidjan
+                  </h4>
+                  <ul class="track-list">
+                    <li>
+                      Administré des bases de données géographiques foncières et
+                      urbaines.
+                    </li>
+                    <li>
+                      Intégré et structuré des données spatiales multi-sources.
+                    </li>
+                    <li>
+                      Exploité des données LiDAR et photogrammétriques pour la
+                      modélisation urbaine.
+                    </li>
+                    <li>
+                      Réalisé des analyses spatiales destinées à l'aide à la
+                      décision publique.
+                    </li>
+                    <li>
+                      Contribué à l'amélioration des processus de gestion et de
+                      mise à jour des données.
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== COMPETENCES ===== -->
+      <section class="section competences" id="competences">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Savoir-faire</p>
+              <h2 class="section-title">Compétences</h2>
+            </div>
+            <span class="section-ref">Feuille 03 / 05</span>
+          </div>
+
+          <div class="skill-groups reveal">
+            <div class="skill-group" style="--swatch: var(--cat-carto)">
+              <div class="skill-group-head">
+                <ion-icon name="earth-outline"></ion-icon>
+                <h3 class="skill-group-title">Compétences géomatiques</h3>
+              </div>
+              <ul class="tag-list">
+                <li class="tag">SIG (ArcGIS / QGIS)</li>
+                <li class="tag">Cartographie &amp; sémiologie graphique</li>
+                <li class="tag">Télédétection</li>
+                <li class="tag">Photogrammétrie &amp; photo-interprétation</li>
+                <li class="tag">Analyse &amp; modélisation spatiale</li>
+                <li class="tag">Traitement LIDAR &amp; 3D</li>
+                <li class="tag">Analyse de séries temporelles</li>
+              </ul>
+            </div>
+
+            <div class="skill-group" style="--swatch: var(--cat-interactive)">
+              <div class="skill-group-head">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <h3 class="skill-group-title">
+                  Développement SIG &amp; WebSIG
+                </h3>
+              </div>
+              <ul class="tag-list">
+                <li class="tag">Programmation SIG (Python / R)</li>
+                <li class="tag">Développement web fullstack</li>
+                <li class="tag">Webmapping (Leaflet, Mapbox, OpenLayers)</li>
+                <li class="tag">Automatisation de traitements</li>
+                <li class="tag">Apprentissage automatique (ML / DL)</li>
+              </ul>
+            </div>
+
+            <div class="skill-group" style="--swatch: var(--cat-stats)">
+              <div class="skill-group-head">
+                <ion-icon name="server-outline"></ion-icon>
+                <h3 class="skill-group-title">Management de données</h3>
+              </div>
+              <ul class="tag-list">
+                <li class="tag">Conception SGBD / SGBDR</li>
+                <li class="tag">Modélisation de données spatiales</li>
+                <li class="tag">ETL &amp; intégration de données (FME)</li>
+                <li class="tag">
+                  Qualité &amp; structuration des référentiels
+                </li>
+                <li class="tag">Data analysis</li>
+              </ul>
+            </div>
+
+            <div class="skill-group" style="--swatch: var(--cat-linkedin)">
+              <div class="skill-group-head">
+                <ion-icon name="construct-outline"></ion-icon>
+                <h3 class="skill-group-title">Construction de solutions</h3>
+              </div>
+              <ul class="tag-list">
+                <li class="tag">Cadrage &amp; conduite de projets</li>
+                <li class="tag">Analyse de besoin &amp; cahier des charges</li>
+                <li class="tag">Architecture de solutions SIG</li>
+                <li class="tag">Accompagnement &amp; formation utilisateurs</li>
+                <li class="tag">Veille technologique</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PORTFOLIO ===== -->
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Réalisations</p>
+              <h2 class="section-title">Portfolio</h2>
+            </div>
+            <span class="section-ref">Feuille 04 / 05</span>
+          </div>
+
+          <div class="filter-bar" data-filter-bar>
+            <button
+              class="filter-btn active"
+              data-filter-btn
+              data-category="all"
+            >
+              <span class="dot" style="background: var(--white)"></span>Tout
+            </button>
+            <button
+              class="filter-btn"
+              data-filter-btn
+              data-category="productions-cartographiques"
+              style="color: var(--cat-carto)"
+            >
+              Productions cartographiques
+            </button>
+            <button
+              class="filter-btn"
+              data-filter-btn
+              data-category="production-interactive"
+              style="color: var(--cat-interactive)"
+            >
+              Production interactive
+            </button>
+            <button
+              class="filter-btn"
+              data-filter-btn
+              data-category="productions-statistiques"
+              style="color: var(--cat-stats)"
+            >
+              Productions statistiques
+            </button>
+          </div>
+
+          <ul class="project-grid reveal" data-project-grid>
+            <!-- Productions cartographiques -->
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Acteurs potentiels de la gestion du biodéchets en Normandie.png"
+                    alt="Acteurs potentiels de biodéchets"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">
+                    Acteurs potentiels de la gestion des biodéchets
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Carte de destinations préférentielles d'étude des non africains.png"
+                    alt="Destinations d'études"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">
+                    Destinations d'étude préférentielles
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/CC01_YAO_Anicet.gif (.zip....).gif"
+                    alt="Évolution des surfaces inondées"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">Évolution des surfaces inondées</h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/magrit.jpg"
+                    alt="Taux d'accroissement naturel"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">Taux d'accroissement naturel</h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Perception des systèmes éducatifs dans le monde.png"
+                    alt="Perception des systèmes éducatifs"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">
+                    Perceptions des systèmes éducatifs dans le monde
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/projet ecopaturage.png"
+                    alt="Proposition d'écoparc"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">Proposition d'écoparc</h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/IMG-20240120-WA0010.jpg"
+                    alt="Niveau de vie médian par commune"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">
+                    Niveau de vie médian par commune
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/carte 3D.jpeg"
+                    alt="Carte 3D d'occupation du sol"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">Carte 3D d'occupation du sol</h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Urbanisation RIO.png"
+                    alt="Immersion dans l'urbanisation de Rio"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">
+                    Immersion dans l'urbanisation de Rio - données LIDAR IGN
+                    (QGIS, Inkscape)
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Proposition d'amenagement ecoquartier.png"
+                    alt="Proposition d'aménagement de l'écoquartier"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">
+                    Proposition d'aménagement de l'écoquartier
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-cartographiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/amenagement Fond du val Rouen.png"
+                    alt="Aménagement du fond du Val de Mont-Saint-Aignan"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-carto)">
+                    <span class="dot"></span>Productions cartographiques
+                  </p>
+                  <h3 class="project-title">
+                    Projet d'aménagement du fond du Val de Mont-Saint-Aignan
+                    (zone naturelle / vallon boisé)
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <!-- Production interactive -->
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="production-interactive"
+            >
+              <a
+                href="https://anicetyao225.shinyapps.io/App_Convoiturage/"
+                target="_blank"
+                rel="noopener"
+              >
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Application shiny.png"
+                    alt="Application WebSIG covoiturage"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="open-outline"></ion-icon> Ouvrir</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-interactive)">
+                    <span class="dot"></span>Production interactive
+                  </p>
+                  <h3 class="project-title">
+                    WebSIG des points de covoiturage en France
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="production-interactive"
+            >
+              <a
+                href="https://qgiscloud.com/Yao/Devoir_G_ocaching/"
+                target="_blank"
+                rel="noopener"
+              >
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/geocachingRouen.JPG"
+                    alt="Geocaching dans la métropole de Rouen"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="open-outline"></ion-icon> Ouvrir</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-interactive)">
+                    <span class="dot"></span>Production interactive
+                  </p>
+                  <h3 class="project-title">
+                    Geocaching dans la métropole de Rouen
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="production-interactive"
+            >
+              <a
+                href="https://code.earthengine.google.com/06e874a013d85e8df99afe4a0fb82a0a"
+                target="_blank"
+                rel="noopener"
+              >
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Capture GEE.JPG"
+                    alt="Analyse de l'évolution de l'urbanisation"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="open-outline"></ion-icon> Ouvrir</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-interactive)">
+                    <span class="dot"></span>Production interactive
+                  </p>
+                  <h3 class="project-title">
+                    Analyse de l'évolution de l'urbanisation
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="production-interactive"
+            >
+              <a
+                href="https://code.earthengine.google.com/db1244f79b597c25b9d3b31ba713993a"
+                target="_blank"
+                rel="noopener"
+              >
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Capture GEE.JPG"
+                    alt="Analyse de l'occupation du sol"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="open-outline"></ion-icon> Ouvrir</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-interactive)">
+                    <span class="dot"></span>Production interactive
+                  </p>
+                  <h3 class="project-title">Analyse de l'occupation du sol</h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="production-interactive"
+            >
+              <a
+                href="https://anicetyao225.github.io/Webapleaflet/"
+                target="_blank"
+                rel="noopener"
+              >
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/CaptureLEF.JPG"
+                    alt="Densité de la population"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="open-outline"></ion-icon> Ouvrir</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-interactive)">
+                    <span class="dot"></span>Production interactive
+                  </p>
+                  <h3 class="project-title">Densité de la population</h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="production-interactive"
+            >
+              <a
+                href="https://storymaps.arcgis.com/stories/622c4650344f4931bca64d8fad1286d1/"
+                target="_blank"
+                rel="noopener"
+              >
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/CAN.jpg"
+                    alt="Storymap Histoire de la Coupe d'Afrique des Nations"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="open-outline"></ion-icon> Ouvrir</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-interactive)">
+                    <span class="dot"></span>Production interactive
+                  </p>
+                  <h3 class="project-title">
+                    Storymap - Histoire de la Coupe d'Afrique des Nations
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="production-interactive"
+            >
+              <a
+                href="https://anicetyao225.github.io/Carte-3D-maptiler/"
+                target="_blank"
+                rel="noopener"
+              >
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Maptiler.JPG"
+                    alt="Carte 3D des patrimoines architecturaux"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="open-outline"></ion-icon> Ouvrir</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-interactive)">
+                    <span class="dot"></span>Production interactive
+                  </p>
+                  <h3 class="project-title">
+                    Carte 3D des patrimoines architecturaux, isochrones et
+                    itinéraires
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="production-interactive"
+            >
+              <a
+                href="https://anicetyao225.github.io/Solution-Norman-Explore/"
+                target="_blank"
+                rel="noopener"
+              >
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Norman'Explore.png"
+                    alt="WebSIG NormanExplore"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="open-outline"></ion-icon> Ouvrir</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-interactive)">
+                    <span class="dot"></span>Production interactive
+                  </p>
+                  <h3 class="project-title">
+                    WebSIG NormanExplore - valorisation des patrimoines
+                    touristiques
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="production-interactive"
+            >
+              <a
+                href="https://anicetyaoweb.netlify.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/geoportals.png"
+                    alt="Application WebSIG interactive"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="open-outline"></ion-icon> Ouvrir</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-interactive)">
+                    <span class="dot"></span>Production interactive
+                  </p>
+                  <h3 class="project-title">
+                    Application WebSIG interactive - LIDAR, géotraitements,
+                    inondation & PostGIS (en développement)
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="production-interactive"
+            >
+              <a
+                href="https://yaoanicet.netlify.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/Dashbord-Barca.png"
+                    alt="Dashboard analytics football"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="open-outline"></ion-icon> Ouvrir</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-interactive)">
+                    <span class="dot"></span>Production interactive
+                  </p>
+                  <h3 class="project-title">Dashboard analytics football</h3>
+                </div>
+              </a>
+            </li>
+
+            <!-- Productions statistiques -->
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-statistiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/analyse biva.jpg"
+                    alt="Analyse bivariée revenu et niveau de vie"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-stats)">
+                    <span class="dot"></span>Productions statistiques
+                  </p>
+                  <h3 class="project-title">
+                    Analyse bivariée entre revenu et niveau de vie
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-statistiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/courbeden.jpg"
+                    alt="Courbe de densité du niveau de vie médian"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-stats)">
+                    <span class="dot"></span>Productions statistiques
+                  </p>
+                  <h3 class="project-title">
+                    Courbe de densité du niveau de vie médian par département
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-statistiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/boite.jpg"
+                    alt="Diagramme en boîte du niveau de vie médian"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-stats)">
+                    <span class="dot"></span>Productions statistiques
+                  </p>
+                  <h3 class="project-title">
+                    Diagramme en boîte du niveau de vie médian
+                  </h3>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="project-card active"
+              data-filter-item
+              data-category="productions-statistiques"
+            >
+              <a href="#" class="lightbox-trigger" data-lightbox>
+                <figure class="project-media">
+                  <img
+                    src="./assets/images/diagr1.jpg"
+                    alt="Diagramme du niveau de vie médian"
+                    loading="lazy"
+                  />
+                  <span class="view"
+                    ><ion-icon name="eye-outline"></ion-icon> Aperçu</span
+                  >
+                </figure>
+                <div class="project-body">
+                  <p class="project-tag" style="--cat: var(--cat-stats)">
+                    <span class="dot"></span>Productions statistiques
+                  </p>
+                  <h3 class="project-title">
+                    Diagramme du niveau de vie médian
+                  </h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="section contact" id="contact" style="border-bottom: none">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Prenons contact</p>
+              <h2 class="section-title">Contact</h2>
+            </div>
+            <span class="section-ref">Feuille 05 / 05</span>
+          </div>
+
+          <div class="contact-grid">
+            <div class="coord-card ticks reveal">
+              <span class="tick-bl"></span><span class="tick-br"></span>
+              <p class="legend-title">
+                <ion-icon name="compass-outline"></ion-icon> Coordonnées
+              </p>
+
+              <div class="coord-row">
+                <ion-icon name="mail-outline"></ion-icon>
+                <div>
+                  <p class="k">Email</p>
+                  <p class="v">
+                    <a href="mailto:yao.anicet36@gmail.com"
+                      >yao.anicet36@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="coord-row">
+                <ion-icon name="call-outline"></ion-icon>
+                <div>
+                  <p class="k">Téléphone</p>
+                  <p class="v">
+                    <a href="tel:+33605510878">+33 6 05 51 08 78</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="coord-row">
+                <ion-icon name="location-outline"></ion-icon>
+                <div>
+                  <p class="k">Adresse</p>
+                  <p class="v">Bordeaux, France</p>
+                </div>
+              </div>
+
+              <div class="coord-row">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <div>
+                  <p class="k">LinkedIn</p>
+                  <p class="v">
+                    <a
+                      href="https://www.linkedin.com/in/anicet-yao-g%C3%A9omaticien-sig-cdi-cartographe-data-analyst-data-scientist/"
+                      target="_blank"
+                      rel="noopener"
+                      >anicet-yao</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="map-frame">
+                <iframe
+                  src="https://maps.google.com/maps?q=Saint-%C3%89tienne%2C%20France&z=12&output=embed"
+                  loading="lazy"
+                  title="Localisation — Saint-Étienne, France"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="contact-form-wrap reveal">
+              <h3 class="form-title">Envoyer un message</h3>
+              <p class="form-sub">
+                Une question, une opportunité, un projet ? Écrivez-moi, je
+                réponds directement sur cet email.
+              </p>
+
+              <form
+                action="https://formsubmit.co/yao.anicet36@gmail.com"
+                method="POST"
+                data-form
+              >
+                <!-- anti-spam et mise en forme de l'email reçu -->
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Nouveau message — Portfolio"
+                />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="text"
+                  name="_honey"
+                  style="display: none"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+
+                <div class="form-row">
+                  <input
+                    type="text"
+                    name="fullname"
+                    class="form-input"
+                    placeholder="Votre nom"
+                    required
+                    data-form-input
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="Votre email"
+                    required
+                    data-form-input
+                  />
+                </div>
+                <textarea
+                  name="message"
+                  class="form-input"
+                  placeholder="Votre message"
+                  required
+                  data-form-input
+                ></textarea>
+                <button
+                  class="btn form-btn"
+                  type="submit"
+                  disabled
+                  data-form-btn
+                >
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                  <span>Envoyer le message</span>
+                </button>
+
+                <p class="form-status" data-form-status aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <span
+          >© <span data-year></span> Anicet YAO - Cartographe &amp;
+          Géomaticien</span
+        >
+        <div class="scale-bar"><span class="bar"></span> 0 - 10 km</div>
+        <div class="social-row">
+          <a
+            href="https://www.linkedin.com/in/anicet-yao-g%C3%A9omaticien-sig-cdi-cartographe-data-analyst-data-scientist/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a
+            href="https://github.com/anicetyao225"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+          <a href="mailto:yao.anicet36@gmail.com" aria-label="Email"
+            ><ion-icon name="mail-outline"></ion-icon
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" data-lightbox-overlay aria-hidden="true">
+      <button
+        class="lightbox-close"
+        data-lightbox-close
+        aria-label="Fermer l'aperçu"
+      >
+        <ion-icon name="close-outline"></ion-icon>
       </button>
-
+      <figure class="lightbox-figure">
+        <img data-lightbox-img src="" alt="" />
+        <figcaption data-lightbox-caption></figcaption>
+      </figure>
     </div>
-  </header>
 
-  <main>
-
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="profil">
-      <div class="container">
-
-        <div class="hero-copy">
-          <p class="hero-coords"><ion-icon name="locate-outline"></ion-icon> 45.43° N · 4.39° E - Bordeaux, France</p>
-
-          <h1 class="hero-title">Anicet <span class="accent">YAO</span></h1>
-          <p class="hero-role">Cartographe · Géomaticien · Développeur SIG Full Stack</p>
-
-          <p class="hero-text">
-            Je conçois des outils SIG et WebSIG et transforme des données géospatiales complexes en cartes,
-            analyses et indicateurs actionnables. Bases de données géographiques, télédétection,
-            automatisation (Python, SQL, FME) et développement SIG, au service de la décision territoriale.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#portfolio" class="btn btn-solid"><ion-icon name="grid-outline"></ion-icon> Voir mes projets</a>
-            <a href="./assets/cv/Anicet_YAO_CV.pdf" class="btn btn-outline" download><ion-icon name="download-outline"></ion-icon> Télécharger mon CV</a>
-            <a href="#contact" class="btn btn-outline"><ion-icon name="mail-outline"></ion-icon> Me contacter</a>
-          </div>
-        </div>
-
-        <div class="hero-portrait">
-          <div class="hero-portrait-frame">
-            <img src="./assets/images/-image.png" alt="Portrait d'Anicet YAO">
-          </div>
-          <p class="hero-portrait-label">Repère · AY-01</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===== STATS ===== -->
-    <section class="stats-band">
-      <div class="container">
-        <div class="stats-strip reveal">
-          <div class="stat">
-            <p class="stat-num">25</p>
-            <p class="stat-label">Projets réalisés</p>
-          </div>
-          <div class="stat">
-            <p class="stat-num">6</p>
-            <p class="stat-label">Structures &amp; missions</p>
-          </div>
-          <div class="stat">
-            <p class="stat-num">9</p>
-            <p class="stat-label">Domaines d'expertise</p>
-          </div>
-          <div class="stat">
-            <p class="stat-num">30+</p>
-            <p class="stat-label">Outils maîtrisés</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== ABOUT ===== -->
-    <section class="section about" id="about">
-      <div class="container">
-
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">À propos</p>
-            <h2 class="section-title">Profil</h2>
-          </div>
-          <span class="section-ref">Feuille 01 / 05</span>
-        </div>
-
-        <div class="about-grid reveal">
-
-          <div class="about-text">
-            <p>
-              Cartographe et géomaticien, je transforme des données géospatiales brutes en cartes,
-              outils et décisions. De la collecte terrain à la mise en production d'un WebSIG, je
-              maîtrise toute la chaîne : structuration de bases de données géographiques
-              (PostgreSQL/PostGIS), traitement d'images satellites, développement d'applications
-              cartographiques et automatisation de traitements avec Python et FME.
-            </p>
-            <p>
-              Je conjugue rigueur technique et sens du terrain - cartographie interactive, télédétection,
-              analyse spatiale et data science se retrouvent dans chacun de mes projets, avec un objectif
-              constant : livrer une donnée fiable et une carte qui parle directement aux décideurs.
-              ArcGIS, QGIS, Python, JavaScript, SQL, Google Earth Engine et FME sont mes outils du
-              quotidien.
-            </p>
-            <p>
-              Formé en France, avec des expériences menées en Côte d'Ivoire comme en France
-              (collectivités territoriales, bureaux d'études, IGN, SUEZ), j'aime relever des problématiques
-              géospatiales concrètes, en autonomie comme en équipe, du cadrage d'un projet jusqu'à
-              l'accompagnement des utilisateurs finaux.
-            </p>
-          </div>
-
-          <div class="legend-card ticks">
-            <span class="tick-bl"></span><span class="tick-br"></span>
-            <p class="legend-title"><ion-icon name="bookmark-outline"></ion-icon> Légende</p>
-            <div class="legend-list">
-              <div class="legend-item"><span class="k">Fonction</span><span class="v">Géomaticien- DEv SIG</span></div>
-              <div class="legend-item"><span class="k">Localisation</span><span class="v">Bordeaux, France</span></div>
-              <div class="legend-item"><span class="k">Formation</span><span class="v">Master Géomatique</span></div>
-              <div class="legend-item"><span class="k">Domaines</span><span class="v">SIG · WebSIG · Data</span></div>
-              <div class="legend-item"><span class="k">Disponibilité</span><span class="v">Sur demande</span></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="layers-grid reveal">
-
-          <div class="layer-card" style="--swatch:var(--cat-interactive)">
-            <span class="layer-code">L01</span>
-            <h4 class="layer-title">Cartographie interactive &amp; WebSIG</h4>
-            <p class="layer-text">Conception et déploiement d'outils WebSIG métier, de la modélisation du besoin jusqu'à la mise en production, pour rendre la donnée géographique accessible et actionnable.</p>
-          </div>
-
-          <div class="layer-card" style="--swatch:var(--cat-carto)">
-            <span class="layer-code">L02</span>
-            <h4 class="layer-title">Cartographie &amp; visualisation spatiale</h4>
-            <p class="layer-text">Des cartes et visualisations qui rendent lisibles des dynamiques géographiques complexes, pour éclairer la décision autant que pour raconter un territoire.</p>
-          </div>
-
-          <div class="layer-card" style="--swatch:var(--cat-stats)">
-            <span class="layer-code">L03</span>
-            <h4 class="layer-title">Développement SIG &amp; automatisation</h4>
-            <p class="layer-text">Scripts Python et chaînes ETL (FME) pour automatiser les traitements SIG, réduire les tâches manuelles et fiabiliser les workflows de production.</p>
-          </div>
-
-          <div class="layer-card" style="--swatch:var(--cat-linkedin)">
-            <span class="layer-code">L04</span>
-            <h4 class="layer-title">Bases de données géographiques</h4>
-            <p class="layer-text">Conception, structuration et administration de bases PostgreSQL/PostGIS et SGBDR, pour une donnée fiable, cohérente et exploitable.</p>
-          </div>
-
-          <div class="layer-card" style="--swatch:var(--cat-interactive)">
-            <span class="layer-code">L05</span>
-            <h4 class="layer-title">Photogrammétrie, LiDAR &amp; 3D</h4>
-            <p class="layer-text">Restitution photogrammétrique et exploitation de nuages de points LiDAR pour la modélisation urbaine et environnementale en 3D.</p>
-          </div>
-
-          <div class="layer-card" style="--swatch:var(--cat-carto)">
-            <span class="layer-code">L06</span>
-            <h4 class="layer-title">Analyse &amp; modélisation spatiale</h4>
-            <p class="layer-text">Croisement de données spatiales multi-sources pour en extraire des indicateurs territoriaux fiables et des modèles d'aide à la décision.</p>
-          </div>
-
-          <div class="layer-card" style="--swatch:var(--cat-stats)">
-            <span class="layer-code">L07</span>
-            <h4 class="layer-title">Pilotage de projets géomatiques</h4>
-            <p class="layer-text">Cadrage, conduite et livraison de projets géomatiques, de l'analyse du besoin jusqu'à l'accompagnement des utilisateurs.</p>
-          </div>
-
-          <div class="layer-card" style="--swatch:var(--cat-linkedin)">
-            <span class="layer-code">L08</span>
-            <h4 class="layer-title">Télédétection &amp; imagerie satellite</h4>
-            <p class="layer-text">Traitement et interprétation d'images Sentinel-2, Landsat et autres sources satellites, au service du suivi environnemental et de l'aménagement.</p>
-          </div>
-
-          <div class="layer-card" style="--swatch:var(--cat-interactive)">
-            <span class="layer-code">L09</span>
-            <h4 class="layer-title">Data analysis &amp; indicateurs territoriaux</h4>
-            <p class="layer-text">Transformation de données brutes en insights exploitables : statistiques, tableaux de bord et cartographies décisionnelles.</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===== TOOLKIT ===== -->
-    <section class="section toolkit">
-      <div class="container">
-
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Environnement technique</p>
-            <h2 class="section-title">Boîte à outils</h2>
-          </div>
-          <span class="section-ref">Légende technique</span>
-        </div>
-
-        <div class="skill-groups reveal">
-
-          <div class="skill-group" style="--swatch:var(--cat-carto)">
-            <div class="skill-group-head"><ion-icon name="map-outline"></ion-icon><h3 class="skill-group-title">SIG &amp; cartographie</h3></div>
-            <ul class="tag-list">
-              <li class="tag">ArcGIS Pro</li>
-              <li class="tag">QGIS</li>
-              <li class="tag">AutoCAD</li>
-              <li class="tag">Agisoft Metashape</li>
-              <li class="tag">Global Mapper</li>
-              <li class="tag">FME</li>
-              <li class="tag">GeoServer</li>
-              <li class="tag">PostGIS</li>
-              <li class="tag">GDAL / OGR</li>
-              <li class="tag">Mapbox GL</li>
-              <li class="tag">Leaflet</li>
-              <li class="tag">OpenLayers</li>
-            </ul>
-          </div>
-
-          <div class="skill-group" style="--swatch:var(--cat-stats)">
-            <div class="skill-group-head"><ion-icon name="analytics-outline"></ion-icon><h3 class="skill-group-title">Télédétection &amp; data science</h3></div>
-            <ul class="tag-list">
-              <li class="tag">Google Earth Engine</li>
-              <li class="tag">ENVI</li>
-              <li class="tag">Erdas Imagine</li>
-              <li class="tag">Rasterio</li>
-              <li class="tag">R Studio</li>
-              <li class="tag">Scikit-learn</li>
-              <li class="tag">Power BI</li>
-              <li class="tag">Pandas / NumPy</li>
-            </ul>
-          </div>
-
-          <div class="skill-group" style="--swatch:var(--cat-interactive)">
-            <div class="skill-group-head"><ion-icon name="terminal-outline"></ion-icon><h3 class="skill-group-title">Développement &amp; WebSIG fullstack</h3></div>
-            <ul class="tag-list">
-              <li class="tag">Python</li>
-              <li class="tag">Django</li>
-              <li class="tag">Flask</li>
-              <li class="tag">JavaScript</li>
-              <li class="tag">React</li>
-              <li class="tag">Node.js</li>
-              <li class="tag">HTML / CSS</li>
-              <li class="tag">API REST</li>
-            </ul>
-          </div>
-
-          <div class="skill-group" style="--swatch:var(--cat-linkedin)">
-            <div class="skill-group-head"><ion-icon name="cloud-outline"></ion-icon><h3 class="skill-group-title">Données, DevOps &amp; outils</h3></div>
-            <ul class="tag-list">
-              <li class="tag">PostgreSQL / SQL</li>
-              <li class="tag">MySQL</li>
-              <li class="tag">Docker</li>
-              <li class="tag">Git &amp; GitHub</li>
-              <li class="tag">Microsoft Office</li>
-              <li class="tag">Adobe Illustrator</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PARCOURS ===== -->
-    <section class="section parcours" id="parcours">
-      <div class="container">
-
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Formation &amp; expérience</p>
-            <h2 class="section-title">Parcours</h2>
-          </div>
-          <span class="section-ref">Feuille 02 / 05</span>
-        </div>
-
-        <div class="parcours-grid reveal">
-
-          <div>
-            <div class="track-head"><ion-icon name="book-outline"></ion-icon><h3>Formation</h3></div>
-            <ol class="track">
-
-              <li class="track-item">
-                <span class="track-year">2023 - 2025</span>
-                <h4 class="track-title">Master Géomatique - Université de Rouen Normandie</h4>
-                <p class="track-text">SIG, cartographie, développement et programmation SIG, webmapping, apprentissage automatique, télédétection, data analysis, dataviz, environnement, aménagement.</p>
-              </li>
-
-              <li class="track-item">
-                <span class="track-year">2019 - 2021</span>
-                <h4 class="track-title">Master Géographie physique - Université Alassane Ouattara de Bouaké</h4>
-                <p class="track-text">SGBDR, programmation et développement SIG, géovisualisation, cartographie, modélisation 3D, climatologie, hydrologie.</p>
-              </li>
-
-              <li class="track-item">
-                <span class="track-year">2016 - 2019</span>
-                <h4 class="track-title">Licence Géographie physique - Université Alassane Ouattara de Bouaké</h4>
-                <p class="track-text">Analyse et traitement de données, modélisation, webmapping, développement SIG, aménagement du territoire, climatologie, hydrologie.</p>
-              </li>
-
-              <li class="track-item">
-                <span class="track-year">2023</span>
-                <h4 class="track-title">Certificat en Photogrammétrie et Télédétection - IGN FI</h4>
-                <p class="track-text">Traitement d'images satellites et restitution photogrammétrique appliqués à la modélisation du territoire.</p>
-              </li>
-
-              <li class="track-item">
-                <span class="track-year">2023</span>
-                <h4 class="track-title">Certificat en Télédétection et Systèmes d'Information Géographique — GEOSIG Corporation</h4>
-                <p class="track-text">Analyse d'images satellites et traitements SIG appliqués au suivi environnemental et territorial.</p>
-              </li>
-
-            </ol>
-          </div>
-
-          <div>
-            <div class="track-head"><ion-icon name="briefcase-outline"></ion-icon><h3>Expérience</h3></div>
-            <ol class="track">
-              <li class="track-item">
-                <span class="track-year">2025 - 2026 · 7 mois, distanciel</span>
-                <h4 class="track-title">Géomaticien SIG / WebSIG - SPAX, Abidjan</h4>
-                <ul class="track-list">
-                  <li>Conçu et déployé un outil WebSIG métier pour la visualisation, le suivi et l'exploitation des données géographiques.</li>
-                  <li>Structuré et administré des bases de données géographiques PostgreSQL/PostGIS pour améliorer la qualité et l'exploitabilité des données.</li>
-                  <li>Développé des scripts Python pour automatiser les traitements SIG et optimiser les workflows de production.</li>
-                  <li>Analysé des données spatiales multi-sources pour produire des indicateurs territoriaux et des supports d'aide à la décision.</li>
-                  <li>Modélisé des données géographiques et conçu des chaînes de traitement adaptées aux besoins métier.</li>
-                  <li>Produit des cartographies thématiques et des livrables techniques pour la planification et le pilotage opérationnel.</li>
-                </ul>
-              </li>
-
-              <li class="track-item">
-                <span class="track-year">2025 · 7 mois</span>
-                <h4 class="track-title">Géomaticien / Data Scientiste - SUEZ, Pessac</h4>
-                <ul class="track-list">
-                  <li>Collecté, intégré et exploité plusieurs sources de données géographiques pour analyser les performances opérationnelles à l'échelle territoriale.</li>
-                  <li>Modélisé les facteurs spatiaux liés aux erreurs de tri des déchets à l'échelle des IRIS.</li>
-                  <li>Réalisé des analyses spatiales et statistiques pour identifier les zones aux comportements spécifiques.</li>
-                  <li>Traité plusieurs milliers d'entités géographiques issues de bases métiers et référentiels.</li>
-                  <li>Automatisé les chaînes de traitement SIG avec Python pour améliorer la reproductibilité des analyses.</li>
-                  <li>Produit des cartographies décisionnelles destinées aux équipes et à l'aide au pilotage.</li>
-                </ul>
-              </li>
-
-              <li class="track-item">
-                <span class="track-year">2024 · 6 mois</span>
-                <h4 class="track-title">Chargé de missions SIG et géomatique - Le Havre Seine Métropole</h4>
-                <ul class="track-list">
-                  <li>Structuré et mis à jour les référentiels géographiques du PLUi pour garantir la cohérence des données d'aménagement.</li>
-                  <li>Intégré et contrôlé des données SIG multi-sources provenant de différents partenaires.</li>
-                  <li>Développé un outil SIG de suivi des haies et de la biodiversité pour accompagner les politiques environnementales.</li>
-                  <li>Réalisé des analyses spatiales et des travaux de photo-interprétation à partir de données satellitaires.</li>
-                  <li>Produit des cartes thématiques destinées aux études territoriales et aux équipes métiers.</li>
-                </ul>
-              </li>
-
-              <li class="track-item">
-                <span class="track-year">2023 · 10 mois</span>
-                <h4 class="track-title">Cartographe - Géomaticien (SIG et télédétection), Cabinet CGEG, Abidjan</h4>
-                <ul class="track-list">
-                  <li>Analysé des images Sentinel-2 et Landsat pour des projets fonciers et agricoles.</li>
-                  <li>Développé un outil SIG d'aide à l'aménagement du territoire.</li>
-                  <li>Produit des cartographies thématiques et des bases de données géographiques.</li>
-                  <li>Réalisé des traitements automatisés pour l'exploitation de données spatiales.</li>
-                </ul>
-              </li>
-
-              <li class="track-item">
-                <span class="track-year">2021 - 2023 · 18 mois</span>
-                <h4 class="track-title">Géomaticien et Administrateur SIG - IGNFI, Abidjan</h4>
-                <ul class="track-list">
-                  <li>Administré des bases de données géographiques foncières et urbaines.</li>
-                  <li>Intégré et structuré des données spatiales multi-sources.</li>
-                  <li>Exploité des données LiDAR et photogrammétriques pour la modélisation urbaine.</li>
-                  <li>Réalisé des analyses spatiales destinées à l'aide à la décision publique.</li>
-                  <li>Contribué à l'amélioration des processus de gestion et de mise à jour des données.</li>
-                </ul>
-              </li>
-
-            </ol>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===== COMPETENCES ===== -->
-    <section class="section competences" id="competences">
-      <div class="container">
-
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Savoir-faire</p>
-            <h2 class="section-title">Compétences</h2>
-          </div>
-          <span class="section-ref">Feuille 03 / 05</span>
-        </div>
-
-        <div class="skill-groups reveal">
-
-          <div class="skill-group" style="--swatch:var(--cat-carto)">
-            <div class="skill-group-head"><ion-icon name="earth-outline"></ion-icon><h3 class="skill-group-title">Compétences géomatiques</h3></div>
-            <ul class="tag-list">
-              <li class="tag">SIG (ArcGIS / QGIS)</li>
-              <li class="tag">Cartographie &amp; sémiologie graphique</li>
-              <li class="tag">Télédétection</li>
-              <li class="tag">Photogrammétrie &amp; photo-interprétation</li>
-              <li class="tag">Analyse &amp; modélisation spatiale</li>
-              <li class="tag">Traitement LIDAR &amp; 3D</li>
-              <li class="tag">Analyse de séries temporelles</li>
-            </ul>
-          </div>
-
-          <div class="skill-group" style="--swatch:var(--cat-interactive)">
-            <div class="skill-group-head"><ion-icon name="code-slash-outline"></ion-icon><h3 class="skill-group-title">Développement SIG &amp; WebSIG</h3></div>
-            <ul class="tag-list">
-              <li class="tag">Programmation SIG (Python / R)</li>
-              <li class="tag">Développement web fullstack</li>
-              <li class="tag">Webmapping (Leaflet, Mapbox, OpenLayers)</li>
-              <li class="tag">Automatisation de traitements</li>
-              <li class="tag">Apprentissage automatique (ML / DL)</li>
-            </ul>
-          </div>
-
-          <div class="skill-group" style="--swatch:var(--cat-stats)">
-            <div class="skill-group-head"><ion-icon name="server-outline"></ion-icon><h3 class="skill-group-title">Management de données</h3></div>
-            <ul class="tag-list">
-              <li class="tag">Conception SGBD / SGBDR</li>
-              <li class="tag">Modélisation de données spatiales</li>
-              <li class="tag">ETL &amp; intégration de données (FME)</li>
-              <li class="tag">Qualité &amp; structuration des référentiels</li>
-              <li class="tag">Data analysis</li>
-            </ul>
-          </div>
-
-          <div class="skill-group" style="--swatch:var(--cat-linkedin)">
-            <div class="skill-group-head"><ion-icon name="construct-outline"></ion-icon><h3 class="skill-group-title">Construction de solutions</h3></div>
-            <ul class="tag-list">
-              <li class="tag">Cadrage &amp; conduite de projets</li>
-              <li class="tag">Analyse de besoin &amp; cahier des charges</li>
-              <li class="tag">Architecture de solutions SIG</li>
-              <li class="tag">Accompagnement &amp; formation utilisateurs</li>
-              <li class="tag">Veille technologique</li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===== PORTFOLIO ===== -->
-    <section class="section portfolio" id="portfolio">
-      <div class="container">
-
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Réalisations</p>
-            <h2 class="section-title">Portfolio</h2>
-          </div>
-          <span class="section-ref">Feuille 04 / 05</span>
-        </div>
-
-        <div class="filter-bar" data-filter-bar>
-          <button class="filter-btn active" data-filter-btn data-category="all"><span class="dot" style="background:var(--white)"></span>Tout</button>
-          <button class="filter-btn" data-filter-btn data-category="productions-cartographiques" style="color:var(--cat-carto)">Productions cartographiques</button>
-          <button class="filter-btn" data-filter-btn data-category="production-interactive" style="color:var(--cat-interactive)">Production interactive</button>
-          <button class="filter-btn" data-filter-btn data-category="productions-statistiques" style="color:var(--cat-stats)">Productions statistiques</button>
-        </div>
-
-        <ul class="project-grid reveal" data-project-grid>
-
-          <!-- Productions cartographiques -->
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/Acteurs potentiels de la gestion du biodéchets en Normandie.png" alt="Acteurs potentiels de biodéchets" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Acteurs potentiels de la gestion des biodéchets</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/Carte de destinations préférentielles d'étude des non africains.png" alt="Destinations d'études" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Destinations d'étude préférentielles</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/CC01_YAO_Anicet.gif (.zip....).gif" alt="Évolution des surfaces inondées" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Évolution des surfaces inondées</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/magrit.jpg" alt="Taux d'accroissement naturel" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Taux d'accroissement naturel</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/Perception des systèmes éducatifs dans le monde.png" alt="Perception des systèmes éducatifs" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Perceptions des systèmes éducatifs dans le monde</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/projet ecopaturage.png" alt="Proposition d'écoparc" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Proposition d'écoparc</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/IMG-20240120-WA0010.jpg" alt="Niveau de vie médian par commune" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Niveau de vie médian par commune</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/carte 3D.jpeg" alt="Carte 3D d'occupation du sol" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Carte 3D d'occupation du sol</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/Urbanisation RIO.png" alt="Immersion dans l'urbanisation de Rio" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Immersion dans l'urbanisation de Rio - données LIDAR IGN (QGIS, Inkscape)</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/Proposition d'amenagement ecoquartier.png" alt="Proposition d'aménagement de l'écoquartier" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Proposition d'aménagement de l'écoquartier</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-cartographiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/amenagement fond du val Rouen.png" alt="Aménagement du fond du Val de Mont-Saint-Aignan" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-carto)"><span class="dot"></span>Productions cartographiques</p>
-                <h3 class="project-title">Projet d'aménagement du fond du Val de Mont-Saint-Aignan (zone naturelle / vallon boisé)</h3>
-              </div>
-            </a>
-          </li>
-
-          <!-- Production interactive -->
-          <li class="project-card active" data-filter-item data-category="production-interactive">
-            <a href="https://anicetyao225.shinyapps.io/App_Convoiturage/" target="_blank" rel="noopener">
-              <figure class="project-media">
-                <img src="./assets/images/Application shiny.png" alt="Application WebSIG covoiturage" loading="lazy">
-                <span class="view"><ion-icon name="open-outline"></ion-icon> Ouvrir</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-interactive)"><span class="dot"></span>Production interactive</p>
-                <h3 class="project-title">WebSIG des points de covoiturage en France</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="production-interactive">
-            <a href="https://qgiscloud.com/Yao/Devoir_G_ocaching/" target="_blank" rel="noopener">
-              <figure class="project-media">
-                <img src="./assets/images/geocachingRouen.jpg" alt="Geocaching dans la métropole de Rouen" loading="lazy">
-                <span class="view"><ion-icon name="open-outline"></ion-icon> Ouvrir</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-interactive)"><span class="dot"></span>Production interactive</p>
-                <h3 class="project-title">Geocaching dans la métropole de Rouen</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="production-interactive">
-            <a href="https://code.earthengine.google.com/06e874a013d85e8df99afe4a0fb82a0a" target="_blank" rel="noopener">
-              <figure class="project-media">
-                <img src="./assets/images/Capture GEE.jpg" alt="Analyse de l'évolution de l'urbanisation" loading="lazy">
-                <span class="view"><ion-icon name="open-outline"></ion-icon> Ouvrir</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-interactive)"><span class="dot"></span>Production interactive</p>
-                <h3 class="project-title">Analyse de l'évolution de l'urbanisation</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="production-interactive">
-            <a href="https://code.earthengine.google.com/db1244f79b597c25b9d3b31ba713993a" target="_blank" rel="noopener">
-              <figure class="project-media">
-                <img src="./assets/images/Capture GEE.jpg" alt="Analyse de l'occupation du sol" loading="lazy">
-                <span class="view"><ion-icon name="open-outline"></ion-icon> Ouvrir</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-interactive)"><span class="dot"></span>Production interactive</p>
-                <h3 class="project-title">Analyse de l'occupation du sol</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="production-interactive">
-            <a href="https://anicetyao225.github.io/Webapleaflet/" target="_blank" rel="noopener">
-              <figure class="project-media">
-                <img src="./assets/images/CaptureLEF.JPG" alt="Densité de la population" loading="lazy">
-                <span class="view"><ion-icon name="open-outline"></ion-icon> Ouvrir</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-interactive)"><span class="dot"></span>Production interactive</p>
-                <h3 class="project-title">Densité de la population</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="production-interactive">
-            <a href="https://storymaps.arcgis.com/stories/622c4650344f4931bca64d8fad1286d1/" target="_blank" rel="noopener">
-              <figure class="project-media">
-                <img src="./assets/images/CAN.jpg" alt="Storymap Histoire de la Coupe d'Afrique des Nations" loading="lazy">
-                <span class="view"><ion-icon name="open-outline"></ion-icon> Ouvrir</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-interactive)"><span class="dot"></span>Production interactive</p>
-                <h3 class="project-title">Storymap - Histoire de la Coupe d'Afrique des Nations</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="production-interactive">
-            <a href="https://anicetyao225.github.io/Carte-3D-maptiler/" target="_blank" rel="noopener">
-              <figure class="project-media">
-                <img src="./assets/images/Maptiler.JPG" alt="Carte 3D des patrimoines architecturaux" loading="lazy">
-                <span class="view"><ion-icon name="open-outline"></ion-icon> Ouvrir</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-interactive)"><span class="dot"></span>Production interactive</p>
-                <h3 class="project-title">Carte 3D des patrimoines architecturaux, isochrones et itinéraires</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="production-interactive">
-            <a href="https://anicetyao225.github.io/Solution-Norman-Explore/" target="_blank" rel="noopener">
-              <figure class="project-media">
-                <img src="./assets/images/Norman'Explore.png" alt="WebSIG NormanExplore" loading="lazy">
-                <span class="view"><ion-icon name="open-outline"></ion-icon> Ouvrir</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-interactive)"><span class="dot"></span>Production interactive</p>
-                <h3 class="project-title">WebSIG NormanExplore - valorisation des patrimoines touristiques</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="production-interactive">
-            <a href="https://anicetyaoweb.netlify.app/" target="_blank" rel="noopener">
-              <figure class="project-media">
-                <img src="./assets/images/geoportals.png" alt="Application WebSIG interactive" loading="lazy">
-                <span class="view"><ion-icon name="open-outline"></ion-icon> Ouvrir</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-interactive)"><span class="dot"></span>Production interactive</p>
-                <h3 class="project-title">Application WebSIG interactive - LIDAR, géotraitements, inondation & PostGIS (en développement)</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="production-interactive">
-            <a href="https://yaoanicet.netlify.app/" target="_blank" rel="noopener">
-              <figure class="project-media">
-                <img src="./assets/images/Dashbord-Barca.png" alt="Dashboard analytics football" loading="lazy">
-                <span class="view"><ion-icon name="open-outline"></ion-icon> Ouvrir</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-interactive)"><span class="dot"></span>Production interactive</p>
-                <h3 class="project-title">Dashboard analytics football</h3>
-              </div>
-            </a>
-          </li>
-
-          <!-- Productions statistiques -->
-          <li class="project-card active" data-filter-item data-category="productions-statistiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/analyse biva.jpg" alt="Analyse bivariée revenu et niveau de vie" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-stats)"><span class="dot"></span>Productions statistiques</p>
-                <h3 class="project-title">Analyse bivariée entre revenu et niveau de vie</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-statistiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/courbeden.jpg" alt="Courbe de densité du niveau de vie médian" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-stats)"><span class="dot"></span>Productions statistiques</p>
-                <h3 class="project-title">Courbe de densité du niveau de vie médian par département</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-statistiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/boite.jpg" alt="Diagramme en boîte du niveau de vie médian" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-stats)"><span class="dot"></span>Productions statistiques</p>
-                <h3 class="project-title">Diagramme en boîte du niveau de vie médian</h3>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-card active" data-filter-item data-category="productions-statistiques">
-            <a href="#" class="lightbox-trigger" data-lightbox>
-              <figure class="project-media">
-                <img src="./assets/images/diagr1.jpg" alt="Diagramme du niveau de vie médian" loading="lazy">
-                <span class="view"><ion-icon name="eye-outline"></ion-icon> Aperçu</span>
-              </figure>
-              <div class="project-body">
-                <p class="project-tag" style="--cat:var(--cat-stats)"><span class="dot"></span>Productions statistiques</p>
-                <h3 class="project-title">Diagramme du niveau de vie médian</h3>
-              </div>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section class="section contact" id="contact" style="border-bottom:none;">
-      <div class="container">
-
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Prenons contact</p>
-            <h2 class="section-title">Contact</h2>
-          </div>
-          <span class="section-ref">Feuille 05 / 05</span>
-        </div>
-
-        <div class="contact-grid">
-
-          <div class="coord-card ticks reveal">
-            <span class="tick-bl"></span><span class="tick-br"></span>
-            <p class="legend-title"><ion-icon name="compass-outline"></ion-icon> Coordonnées</p>
-
-            <div class="coord-row">
-              <ion-icon name="mail-outline"></ion-icon>
-              <div><p class="k">Email</p><p class="v"><a href="mailto:yao.anicet36@gmail.com">yao.anicet36@gmail.com</a></p></div>
-            </div>
-
-            <div class="coord-row">
-              <ion-icon name="call-outline"></ion-icon>
-              <div><p class="k">Téléphone</p><p class="v"><a href="tel:+33605510878">+33 6 05 51 08 78</a></p></div>
-            </div>
-
-            <div class="coord-row">
-              <ion-icon name="location-outline"></ion-icon>
-              <div><p class="k">Adresse</p><p class="v">Bordeaux, France</p></div>
-            </div>
-
-            <div class="coord-row">
-              <ion-icon name="logo-linkedin"></ion-icon>
-              <div><p class="k">LinkedIn</p><p class="v"><a href="https://www.linkedin.com/in/anicet-yao-g%C3%A9omaticien-sig-cdi-cartographe-data-analyst-data-scientist/" target="_blank" rel="noopener">anicet-yao</a></p></div>
-            </div>
-
-            <div class="map-frame">
-              <iframe
-                src="https://maps.google.com/maps?q=Saint-%C3%89tienne%2C%20France&z=12&output=embed"
-                loading="lazy" title="Localisation — Saint-Étienne, France"></iframe>
-            </div>
-          </div>
-
-          <div class="contact-form-wrap reveal">
-            <h3 class="form-title">Envoyer un message</h3>
-            <p class="form-sub">Une question, une opportunité, un projet ? Écrivez-moi, je réponds directement sur cet email.</p>
-
-            <form action="https://formsubmit.co/yao.anicet36@gmail.com" method="POST" data-form>
-
-              <!-- anti-spam et mise en forme de l'email reçu -->
-              <input type="hidden" name="_subject" value="Nouveau message — Portfolio">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-
-              <div class="form-row">
-                <input type="text" name="fullname" class="form-input" placeholder="Votre nom" required data-form-input>
-                <input type="email" name="email" class="form-input" placeholder="Votre email" required data-form-input>
-              </div>
-              <textarea name="message" class="form-input" placeholder="Votre message" required data-form-input></textarea>
-              <button class="btn form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane-outline"></ion-icon>
-                <span>Envoyer le message</span>
-              </button>
-
-              <p class="form-status" data-form-status aria-live="polite"></p>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container footer-row">
-      <span>© <span data-year></span> Anicet YAO - Cartographe &amp; Géomaticien</span>
-      <div class="scale-bar"><span class="bar"></span> 0 - 10 km</div>
-      <div class="social-row">
-        <a href="https://www.linkedin.com/in/anicet-yao-g%C3%A9omaticien-sig-cdi-cartographe-data-analyst-data-scientist/" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
-        <a href="https://github.com/anicetyao225" target="_blank" rel="noopener" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
-        <a href="mailto:yao.anicet36@gmail.com" aria-label="Email"><ion-icon name="mail-outline"></ion-icon></a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ===== LIGHTBOX ===== -->
-  <div class="lightbox" data-lightbox-overlay aria-hidden="true">
-    <button class="lightbox-close" data-lightbox-close aria-label="Fermer l'aperçu">
-      <ion-icon name="close-outline"></ion-icon>
-    </button>
-    <figure class="lightbox-figure">
-      <img data-lightbox-img src="" alt="">
-      <figcaption data-lightbox-caption></figcaption>
-    </figure>
-  </div>
-
-  <script src="./assets/js/script.js"></script>
-
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-  <!-- Statistiques de visite (GoatCounter) -->
-  <script data-goatcounter="https://anicet.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-
-</body>
-
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Statistiques de visite (GoatCounter) -->
+    <script
+      data-goatcounter="https://anicet.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
 </html>
