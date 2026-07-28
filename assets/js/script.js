@@ -1,159 +1,176 @@
 'use strict';
 
+/* ---------- mobile nav toggle ---------- */
+const navToggle = document.querySelector('[data-nav-toggle]');
+const navList = document.querySelector('[data-nav-list]');
 
-
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
-
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-
-  testimonialsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
+if (navToggle && navList) {
+  navToggle.addEventListener('click', () => {
+    navList.classList.toggle('open');
   });
 
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-
-
-
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
-
+  navList.querySelectorAll('[data-nav-link]').forEach((link) => {
+    link.addEventListener('click', () => navList.classList.remove('open'));
   });
 }
 
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
+/* ---------- active nav link on scroll ---------- */
+const navLinks = document.querySelectorAll('[data-nav-link]');
+const sections = document.querySelectorAll('main section[id], .hero[id]');
 
-const filterFunc = function (selectedValue) {
+if ('IntersectionObserver' in window && sections.length) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach((link) => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+        });
+      });
+    },
+    { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+  );
 
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
-    }
-
-  }
-
+  sections.forEach((section) => observer.observe(section));
 }
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+/* ---------- scroll reveal ---------- */
+const revealEls = document.querySelectorAll('.reveal');
 
-for (let i = 0; i < filterBtn.length; i++) {
+if ('IntersectionObserver' in window && revealEls.length) {
+  const revealObserver = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+  revealEls.forEach((el) => revealObserver.observe(el));
+} else {
+  revealEls.forEach((el) => el.classList.add('in-view'));
+}
 
-  filterBtn[i].addEventListener("click", function () {
+/* ---------- lightbox (projets sans lien externe) ---------- */
+const lightbox = document.querySelector('[data-lightbox-overlay]');
+const lightboxImg = document.querySelector('[data-lightbox-img]');
+const lightboxCaption = document.querySelector('[data-lightbox-caption]');
+const lightboxClose = document.querySelector('[data-lightbox-close]');
+const lightboxTriggers = document.querySelectorAll('[data-lightbox]');
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
+const openLightbox = (imgSrc, imgAlt, caption) => {
+  if (!lightbox || !lightboxImg) return;
+  lightboxImg.src = imgSrc;
+  lightboxImg.alt = imgAlt;
+  if (lightboxCaption) lightboxCaption.textContent = caption;
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+};
 
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
+const closeLightbox = () => {
+  if (!lightbox) return;
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+};
 
+lightboxTriggers.forEach((trigger) => {
+  trigger.addEventListener('click', (event) => {
+    event.preventDefault();
+    const img = trigger.querySelector('img');
+    const title = trigger.querySelector('.project-title');
+    if (img) openLightbox(img.src, img.alt, title ? title.textContent : '');
+  });
+});
+
+if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+if (lightbox) {
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+}
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeLightbox();
+});
+
+/* ---------- portfolio filter ---------- */
+const filterBtns = document.querySelectorAll('[data-filter-btn]');
+const projectItems = document.querySelectorAll('[data-filter-item]');
+
+filterBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const category = btn.dataset.category;
+
+    filterBtns.forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    projectItems.forEach((item) => {
+      const match = category === 'all' || item.dataset.category === category;
+      item.classList.toggle('active', match);
+    });
+  });
+});
+
+/* ---------- contact form: validation + envoi réel (FormSubmit) ---------- */
+const form = document.querySelector('[data-form]');
+const formInputs = document.querySelectorAll('[data-form-input]');
+const formBtn = document.querySelector('[data-form-btn]');
+const formBtnLabel = formBtn ? formBtn.querySelector('span') : null;
+const formStatus = document.querySelector('[data-form-status]');
+
+if (form && formBtn) {
+  formInputs.forEach((input) => {
+    input.addEventListener('input', () => {
+      formBtn.disabled = !form.checkValidity();
+    });
   });
 
-}
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (!form.checkValidity()) return;
 
+    const ajaxUrl = form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+    const originalLabel = formBtnLabel ? formBtnLabel.textContent : '';
+    const sendingLabel = form.dataset.sendingLabel || 'Envoi en cours...';
+    const successMsg = form.dataset.successMsg || 'Message envoyé — merci, je reviens vers vous rapidement.';
+    const errorMsg = form.dataset.errorMsg || "L'envoi a échoué. Écrivez-moi directement à yao.anicet36@gmail.com.";
 
+    formBtn.disabled = true;
+    if (formBtnLabel) formBtnLabel.textContent = sendingLabel;
+    if (formStatus) { formStatus.textContent = ''; formStatus.className = 'form-status'; }
 
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
+    try {
+      const response = await fetch(ajaxUrl, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form),
+      });
 
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
+      if (!response.ok) throw new Error('Réponse invalide du serveur');
 
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-
-  });
-}
-
-
-
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+      form.reset();
+      formBtn.disabled = true;
+      if (formStatus) {
+        formStatus.textContent = successMsg;
+        formStatus.className = 'form-status success';
       }
+    } catch (err) {
+      if (formStatus) {
+        formStatus.textContent = errorMsg;
+        formStatus.className = 'form-status error';
+      }
+      formBtn.disabled = false;
+    } finally {
+      if (formBtnLabel) formBtnLabel.textContent = originalLabel || 'Envoyer le message';
     }
-
   });
 }
+
+/* ---------- footer year ---------- */
+const yearEl = document.querySelector('[data-year]');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
