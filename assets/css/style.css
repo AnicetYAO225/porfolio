@@ -707,6 +707,158 @@ main, .site-header, footer { position: relative; z-index: 1; }
 
 
 /*-----------------------------------*\
+  #PARCOURS — EXPERIENCE SLIDER
+\*-----------------------------------*/
+
+.track-slider {
+  display: flex;
+  flex-direction: column;
+  height: 780px; /* fallback, refined by JS to match the Formation column */
+}
+
+.track-slider-viewport {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+
+/* fade cue at the bottom when a slide's content overflows */
+.track-slider-viewport::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  background: linear-gradient(to bottom, transparent, var(--ink-900));
+  pointer-events: none;
+}
+
+.track-slider-viewport .track {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 22px;
+  transition: transform 0.55s cubic-bezier(0.65, 0, 0.35, 1);
+  will-change: transform;
+}
+
+.track-slider-viewport .track-item {
+  flex: 0 0 calc(50% - 11px);
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding-bottom: 0;
+  padding-right: 14px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+.track-slider-viewport .track-item::-webkit-scrollbar { width: 4px; }
+.track-slider-viewport .track-item::-webkit-scrollbar-track { background: transparent; }
+.track-slider-viewport .track-item::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 4px;
+}
+
+.track-slider-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  flex: 0 0 auto;
+}
+
+.track-slider-count {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fog);
+  white-space: nowrap;
+}
+
+.track-slider-count strong {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.track-slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.track-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.track-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.track-dot.active {
+  background: var(--brass);
+  transform: scale(1.4);
+}
+
+.track-nav-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.track-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  color: var(--white);
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.track-nav-btn:hover {
+  border-color: var(--brass);
+  color: var(--brass);
+  transform: translateY(-2px);
+}
+
+.track-nav-btn ion-icon {
+  font-size: 15px;
+  pointer-events: none;
+}
+
+@media (max-width: 860px) {
+  .track-slider { height: auto !important; }
+  .track-slider-viewport { overflow: visible; }
+  .track-slider-viewport::after { display: none; }
+  .track-slider-viewport .track {
+    height: auto;
+    transform: none !important;
+  }
+  .track-slider-viewport .track-item {
+    flex-basis: auto;
+    height: auto;
+    overflow-y: visible;
+    padding-right: 0;
+  }
+  .track-slider-nav { display: none; }
+}
+
+
+/*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
 
